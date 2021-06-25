@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Chart</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js" integrity="sha512-vBmx0N/uQOXznm/Nbkp7h0P1RfLSj0HQrFSzV8m7rOGyj30fYAOKHYvCNez+yM8IrfnW0TCodDEjRqf6fodf/Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!--ໂຕເສີມໃນການໂຊຂໍ້ມູນຢູ່ເສັ້ງສະແດງຕ່າງໆ-->
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@1"></script> <!--ສີ້ນສຸດການເພີ່ມໂຕເສີມໃນການໂຊຂໍ້ມູນຢູ່ເສັ້ງສະແດງຕ່າງໆ-->
+<style type="text/css">
+body{
+	background: #EFE1CE;
+}
+.header{
+	background: #0000ff;
+	color: #fff;
+	text-indent: 15px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	padding-bottom: 25px;
+	padding-top: 5px;
+}
+.push{
+	margin-top: 10px;
+}
+.inside{
+	background: #ffffff;
+	border: 2px solid #4000ff;
+	padding: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+.ab{
+	margin-bottom: 50px;
+}
+.inside1{
+background: #EDD59E;
+margin-bottom: 20px;
+}
+	
+</style>
+</head>
+<body>
+		<!--add bootsrapໃຫ້ມັນຈໍນ້ອຍ-->
+<div class="push">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				   <div class="header">
+					Lao GDP
+					</div>
+					<div class="inside">
+						<canvas id="myChart"> </canvas>
+				    </div>
+			</div>
+			<div class="col-md-6">
+				<div class="header">
+					Lao GDP
+					</div>
+				<div class="inside">
+				<canvas id="barchart"></canvas>
+				</div>
+			</div>
+		</div>
+		<hr/>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="inside">
+				<canvas id="piechart"></canvas>
+			</div>
+			</div>
+			<div class="col-md-6">
+				
+					<div class="inside">
+					<canvas id="pChart"></canvas>
+				
+			</div>
+				
+			</div>
+		</div>
+		<hr/>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="ab">
+					<div class="inside1">
+					<canvas id="bChart"></canvas>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+</body>
+<script src="js/chart.js"></script>
+</html>
